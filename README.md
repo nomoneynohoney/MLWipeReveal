@@ -3,8 +3,10 @@
 
 A easy setting wipe-reveal view like scratch-offs.
 
+指定前後圖片即可做出的刮刮樂效果
+
 ### Version
-1.0.0
+v1.0.5
 
 ### Usage
 
