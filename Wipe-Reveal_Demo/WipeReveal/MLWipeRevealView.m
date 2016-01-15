@@ -11,8 +11,6 @@
 @interface MLWipeRevealView ()
 @property (nonatomic, strong) UIImage *backgroundImage;
 @property (nonatomic, strong) UIImage *imageForWipeOut;
-@property (nonatomic, strong) UIView *backgroundView;
-@property (nonatomic, strong) UIView *viewForWipeOut;
 @end
 
 @implementation MLWipeRevealView {
