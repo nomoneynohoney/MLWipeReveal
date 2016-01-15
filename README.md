@@ -1,5 +1,5 @@
 # MLWipeReveal
-![DEMO GIF] (https://6neko.com/download/V6bq6l.gif)
+![DEMO GIF] (https://6neko.com/download/b6ZKvx.gif)
 A easy setting wipe-reveal view like scratch-offs.
 
 ### Version
