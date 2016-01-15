@@ -1,9 +1,9 @@
 # MLWipeReveal
 ![DEMO GIF] (https://6neko.com/download/b6ZKvx.gif)
 
-A easy setting wipe-reveal view like scratch-offs.
+A easy setting wipe-reveal view like scratch-offs. 
 
-指定前後圖片即可做出的刮刮樂效果
+指定前後圖片即可做出的刮刮樂效果, 並且有Delegate Method可以輕鬆讀出已刮過區域百分比.
 
 ### Version
 v1.0.5
