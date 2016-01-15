@@ -11,6 +11,8 @@
 @interface MLWipeRevealView ()
 @property (nonatomic, strong) UIImage *backgroundImage;
 @property (nonatomic, strong) UIImage *imageForWipeOut;
+@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) UIView *viewForWipeOut;
 @end
 
 @implementation MLWipeRevealView {
@@ -23,9 +25,11 @@
 - (void)drawRect:(CGRect)rect
 {
     UIImageView *imgv = [[UIImageView alloc] initWithFrame:self.bounds];
+    imgv.contentMode = UIViewContentModeScaleAspectFill;
     imgv.image = self.backgroundImage;
     [self addSubview:imgv];
     imageViewForWipeOut = [[UIImageView alloc] initWithFrame:self.bounds];
+    imageViewForWipeOut.contentMode = UIViewContentModeScaleAspectFill;
     imageViewForWipeOut.image = self.imageForWipeOut;
     [self addSubview:imageViewForWipeOut];
     

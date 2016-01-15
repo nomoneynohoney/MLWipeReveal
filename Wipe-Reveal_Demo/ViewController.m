@@ -21,11 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MLWipeRevealView *v = [MLWipeRevealView wipeRevealViewWithFrame:CGRectMake(20.0, 100.0, 200.0, 150.0) withBackGroundImage:[UIImage imageNamed:@"bg.jpg"] andImageForWipeOut:[UIImage imageNamed:@"fore.jpg"] delegate:self];
+    MLWipeRevealView *v = [MLWipeRevealView wipeRevealViewWithFrame:[UIScreen mainScreen].bounds withBackGroundImage:[UIImage imageNamed:@"app.jpg"] andImageForWipeOut:[UIImage imageNamed:@"mask.png"] delegate:self];
     [self.view addSubview:v];
+    
+    [self.view bringSubviewToFront:labelPercentage];
 }
 -(void)wipeRevealView:(MLWipeRevealView *)wipeRevealView revealPercentage:(float)revealPercentage{
-    labelPercentage.text = [NSString stringWithFormat:@"%f %% revealed", revealPercentage];
+    labelPercentage.text = [NSString stringWithFormat:@"%.2f %% revealed", revealPercentage];
 }
 
 

@@ -19,4 +19,5 @@
 @property (weak, nonatomic) id <MLWipeRevealViewDelegate> delegate;
 
 +(MLWipeRevealView*)wipeRevealViewWithFrame:(CGRect)frame withBackGroundImage:(UIImage*)backgoundImage andImageForWipeOut:(UIImage*)imageForWipeOut delegate:(id<MLWipeRevealViewDelegate>)delegate;
+
 @end
