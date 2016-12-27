@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494E8FA11E1207070066D24D /* MLWipeRevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494E8FA01E1207070066D24D /* MLWipeRevealView.m */; };
 		49DAE6B11C48A2C400D22E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DAE6B01C48A2C400D22E0C /* main.m */; };
 		49DAE6B41C48A2C400D22E0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DAE6B31C48A2C400D22E0C /* AppDelegate.m */; };
 		49DAE6B71C48A2C400D22E0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DAE6B61C48A2C400D22E0C /* ViewController.m */; };
 		49DAE6BA1C48A2C400D22E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6B81C48A2C400D22E0C /* Main.storyboard */; };
 		49DAE6BC1C48A2C400D22E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6BB1C48A2C400D22E0C /* Assets.xcassets */; };
 		49DAE6BF1C48A2C400D22E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6BD1C48A2C400D22E0C /* LaunchScreen.storyboard */; };
-		49DAE6CD1C48A3DB00D22E0C /* MLWipeRevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DAE6CC1C48A3DB00D22E0C /* MLWipeRevealView.m */; };
 		49DAE6CF1C48AB0800D22E0C /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6CE1C48AB0800D22E0C /* bg.jpg */; };
 		49DAE6D11C48AB1E00D22E0C /* fore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6D01C48AB1E00D22E0C /* fore.jpg */; };
 		49DAE6D31C48C56B00D22E0C /* app.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DAE6D21C48C56B00D22E0C /* app.jpg */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		494E8F9F1E1207070066D24D /* MLWipeRevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLWipeRevealView.h; sourceTree = "<group>"; };
+		494E8FA01E1207070066D24D /* MLWipeRevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLWipeRevealView.m; sourceTree = "<group>"; };
 		49DAE6AC1C48A2C400D22E0C /* Wipe-Reveal_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wipe-Reveal_Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DAE6B01C48A2C400D22E0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49DAE6B21C48A2C400D22E0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		49DAE6BB1C48A2C400D22E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DAE6BE1C48A2C400D22E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49DAE6C01C48A2C400D22E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49DAE6CB1C48A3DB00D22E0C /* MLWipeRevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLWipeRevealView.h; sourceTree = "<group>"; };
-		49DAE6CC1C48A3DB00D22E0C /* MLWipeRevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLWipeRevealView.m; sourceTree = "<group>"; };
 		49DAE6CE1C48AB0800D22E0C /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		49DAE6D01C48AB1E00D22E0C /* fore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fore.jpg; sourceTree = "<group>"; };
 		49DAE6D21C48C56B00D22E0C /* app.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = app.jpg; sourceTree = "<group>"; };
@@ -50,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494E8F9E1E1207070066D24D /* MLWipeReveal */ = {
+			isa = PBXGroup;
+			children = (
+				494E8F9F1E1207070066D24D /* MLWipeRevealView.h */,
+				494E8FA01E1207070066D24D /* MLWipeRevealView.m */,
+			);
+			path = MLWipeReveal;
+			sourceTree = SOURCE_ROOT;
+		};
 		49DAE6A31C48A2C400D22E0C = {
 			isa = PBXGroup;
 			children = (
@@ -69,11 +78,11 @@
 		49DAE6AE1C48A2C400D22E0C /* Wipe-Reveal_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				494E8F9E1E1207070066D24D /* MLWipeReveal */,
 				49DAE6D41C48C69900D22E0C /* mask.png */,
 				49DAE6D21C48C56B00D22E0C /* app.jpg */,
 				49DAE6CE1C48AB0800D22E0C /* bg.jpg */,
 				49DAE6D01C48AB1E00D22E0C /* fore.jpg */,
-				49DAE6CA1C48A3DB00D22E0C /* WipeReveal */,
 				49DAE6B21C48A2C400D22E0C /* AppDelegate.h */,
 				49DAE6B31C48A2C400D22E0C /* AppDelegate.m */,
 				49DAE6B51C48A2C400D22E0C /* ViewController.h */,
@@ -93,15 +102,6 @@
 				49DAE6B01C48A2C400D22E0C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		49DAE6CA1C48A3DB00D22E0C /* WipeReveal */ = {
-			isa = PBXGroup;
-			children = (
-				49DAE6CB1C48A3DB00D22E0C /* MLWipeRevealView.h */,
-				49DAE6CC1C48A3DB00D22E0C /* MLWipeRevealView.m */,
-			);
-			path = WipeReveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49DAE6B71C48A2C400D22E0C /* ViewController.m in Sources */,
-				49DAE6CD1C48A3DB00D22E0C /* MLWipeRevealView.m in Sources */,
+				494E8FA11E1207070066D24D /* MLWipeRevealView.m in Sources */,
 				49DAE6B41C48A2C400D22E0C /* AppDelegate.m in Sources */,
 				49DAE6B11C48A2C400D22E0C /* main.m in Sources */,
 			);

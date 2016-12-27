@@ -32,14 +32,14 @@
     [self addSubview:imageViewForWipeOut];
     
 }
-
-+(MLWipeRevealView*)wipeRevealViewWithFrame:(CGRect)frame withBackGroundImage:(UIImage*)backgoundImage andImageForWipeOut:(UIImage*)imageForWipeOut delegate:(id<MLWipeRevealViewDelegate>)delegate{
++(MLWipeRevealView *)wipeRevealViewWithFrame:(CGRect)frame withBackGroundImage:(UIImage *)backgoundImage andImageForWipeOut:(UIImage *)imageForWipeOut revealPercentageCallBack:(void (^)(double))revealedPercentage{
     MLWipeRevealView *v = [[MLWipeRevealView alloc] initWithFrame:frame];
-    v.delegate = delegate;
+    v.percentageCallBack = revealedPercentage;
     v.backgroundImage = backgoundImage;
     v.imageForWipeOut = imageForWipeOut;
     return v;
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
@@ -62,9 +62,7 @@
     imageViewForWipeOut.image = UIGraphicsGetImageFromCurrentImageContext();
     [imageViewForWipeOut setAlpha:1.0];
     UIGraphicsEndImageContext();
-    if ([self.delegate respondsToSelector:@selector(wipeRevealView:revealPercentage:)]) {
-        [self.delegate wipeRevealView:self revealPercentage:ReportAlphaPercent(imageViewForWipeOut.image.CGImage)];
-    }
+    if (self.percentageCallBack) self.percentageCallBack(ReportAlphaPercent(imageViewForWipeOut.image.CGImage));
     lastPoint = currentPoint;
 }
 float ReportAlphaPercent(CGImageRef imgRef)

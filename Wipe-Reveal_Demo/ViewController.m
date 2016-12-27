@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MLWipeRevealView.h"
 
 @interface ViewController ()
 
@@ -20,16 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    MLWipeRevealView *v = [MLWipeRevealView wipeRevealViewWithFrame:[UIScreen mainScreen].bounds withBackGroundImage:[UIImage imageNamed:@"app.jpg"] andImageForWipeOut:[UIImage imageNamed:@"mask.png"] revealPercentageCallBack:^(double percentage) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            labelPercentage.text = [NSString stringWithFormat:@"%.2f %% revealed", percentage];
+        });
+        
+    }];
     
-    MLWipeRevealView *v = [MLWipeRevealView wipeRevealViewWithFrame:[UIScreen mainScreen].bounds withBackGroundImage:[UIImage imageNamed:@"app.jpg"] andImageForWipeOut:[UIImage imageNamed:@"mask.png"] delegate:self];
     [self.view addSubview:v];
     
     [self.view bringSubviewToFront:labelPercentage];
 }
--(void)wipeRevealView:(MLWipeRevealView *)wipeRevealView revealPercentage:(float)revealPercentage{
-    labelPercentage.text = [NSString stringWithFormat:@"%.2f %% revealed", revealPercentage];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

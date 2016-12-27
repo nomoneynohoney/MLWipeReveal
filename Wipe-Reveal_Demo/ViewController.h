@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MLWipeRevealView.h"
 
-@interface ViewController : UIViewController <MLWipeRevealViewDelegate>
+@interface ViewController : UIViewController
 
 
 @end
