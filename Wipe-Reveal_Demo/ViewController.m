@@ -31,6 +31,8 @@
     [self.view addSubview:v];
     
     [self.view bringSubviewToFront:labelPercentage];
+    
+    // Done
 }
 
 - (void)didReceiveMemoryWarning {
