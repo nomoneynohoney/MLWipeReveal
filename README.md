@@ -2,7 +2,7 @@
 
 A easy setting wipe-reveal view like scratch-offs. 
 
-指定前後圖片即可做出的刮刮樂效果, 並且可以callback輕鬆讀出已刮過區域百分比.
+指定前後圖片即可做出的刮刮樂效果, 並且可以從callback輕鬆讀出已刮過區域百分比.
 
 ![DEMO GIF] (https://6neko.com/download/b6ZKvx.gif)
 
